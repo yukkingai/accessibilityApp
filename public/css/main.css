@@ -37,4 +37,152 @@ Accessibility
 	display: none;
 }
 
+#bg {
+	background-image: url(/images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.main-bg {
+	background-image: url(/images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body {
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content {
+	display: flex;
+}
+
+.display {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: 50px;
+	margin-top: 100px;
+	padding: 20px;
+	align-items: center;
+	text-align: center;
+	background-color: beige;
+	opacity: 90%;
+	border-radius: 20px;
+	padding-bottom: 40px;
+}
+
+.display a {
+	text-decoration: none;
+	font-size: 30px;
+	color: rgb(245, 91, 86);
+}
+
+.display a:hover {
+	color: rgb(250, 214, 82);
+}
+
+h1 {
+	color: rgb(57, 56, 56);
+	display: flex;
+}
+
+.main-content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: 30px;
+	margin-top: 30px;
+	padding: 20px;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	background-color: beige;
+	/* opacity: 90%; */
+	border-radius: 20px;
+	padding-bottom: 40px;
+}
+
+.player {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	align-content: center; 
+	justify-content: center;
+}
+
+.home {
+	text-decoration: none;
+	color: rgb(245, 91, 86);
+}
+
+.back-button a {
+	float: left;
+}
+
+.home:hover {
+	text-decoration: underline;
+	font-size: large;
+}
+
+span {
+	font-style: oblique;
+	color: rgb(245, 91, 86);
+}
+
+.player img {
+	width: 100%;
+}
+
+video {
+	width: 100%;
+}
+
+button {
+	margin: 15px auto;
+	padding: 5px 10px;
+	color: rgb(245, 91, 86);
+	border-color: rgb(245, 91, 86);
+	border-radius: 4px;
+	background: none;
+}
+
+.acc img {
+	/* float: right; */
+	width: 20%;
+}
+
+.video-img img {
+	width: 100%;
+}
+
+.controls {
+	margin-bottom: 60px;
+}
+
+
+@media screen and (min-width: 64em) {
+	.display {
+		margin: 200px;
+	}	
+
+	.main-content {
+		margin: 120px;
+		padding: 60px;
+	}
+
+	.player img {
+		width: 30%;
+	}
+
+	.video-img img {
+		width: 50%;
+		
+	}
+
+}
+
+
 

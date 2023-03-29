@@ -4,37 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/public/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
     <title>Cutlural Experience in Hawaii</title>
-    <a class="skip-link screen-reader-text hidden" href="#content">Skip to content</a>
+    
 </head>
-<body>
-    <main id="content">
+<body class="main-bg">
+    <a class="skip-link screen-reader-text hidden" href="#content">Skip to content</a>
+    <main id="content" class="main-content" alt="Background image of Hawaiian Flowers">
+        <a class="home" href="/">Back</a>
         <h1>Interesting Videos</h1>
 
         <div class="desc">
-            <div>
+                
+                <span><b>ABOUT THIS VIDEO</b></span><br><br>
+
+                <div class="video-img">
+                    <img src="/images/family.png" alt="Video Cover Image">
+                </div>
+
                 <p>
-                <span>ABOUT THIS VIDEO</span><br><br>
                 Real Hawaiian Families talk about what food, language, and cultural heritage mean to them. <br>
-                There is a movie available on Netflix that is called "Finding ʻOhana", very great source to learn about Hawaiian culture!
+                There is a movie available on Netflix that is called "Finding ʻOhana", very great source to learn about Hawaiian culture!<br><br>
                 </p>
-            </div>
+                
         </div>
 
+       
         <section class="player">
             <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4Gyz0g5YpnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
             <video controls>
-                <source src="/public/assets/Hawaiian.mp4" type="video/mp4">
+                <source src="/assets/Hawaiian.mp4" type="video/mp4" alt="Video of Hawaiian Culture of Families">
                 <p>
                   Your browser doesn't support HTML video. Here is a
-                  <a href="/public/assets/Hawaiian.mp4">link to the video</a> instead.
+                  <a href="/assets/Hawaiian.mp4">link to the video</a> instead.
                 </p>
                 <track default
                     kind="captions"
                     srclang="en"
-                    src="/public/assets/Hawaiian.vtt">
+                    src="/assets/Hawaiian.vtt">
               </video>
             
               <div class="controls">
@@ -47,11 +55,13 @@
               
         </section>
         
+        <div class="video-img">
+            <p>Movie Picture:</p>
+            <img class="ohana" src="/images/finding-ohana.JPG" alt="Movie 'Finding O'hana' Image">
+        </div>
 
-        <a href="/">Home</a>
-        
 
     </main>
-    <script src="/public/js/main.js" type="module" defer></script>
+    <script src="/js/main.js" type="module" defer></script>
 </body>
 </html>
