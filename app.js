@@ -5,19 +5,17 @@ const app = express(); // create an express app
 
 const port = process.env.PORT || 3000;
 
+app.use(express.static('public'));
 // this is a route handler -> listen for incoming requests and send back a response
-app.get('/', (req, res) => { // this is defult index "/" root route, expects to render an index page
-    // this is pointing at index.html -> shared team page
+app.get('/', (req, res) => { 
     res.sendFile(__dirname + '/index.html');
 });
 
 app.get('/audio', (req, res) => {
-    // this is pointing at index.html -> shared team page
     res.sendFile(__dirname + '/audio.html');
 });
 
 app.get('/video', (req, res) => {
-  // this is pointing at index.html -> shared team page
   res.sendFile(__dirname + '/video.html');
 });
 

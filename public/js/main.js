@@ -3,7 +3,7 @@ let playPauseBtn = document.querySelector(".playpause"),
     rwdBtn = document.querySelector(".rwd"),
     fwdBtn = document.querySelector(".fwd"),
     timeLabel = document.querySelector(".time"),
-    player = document.querySelector("video");
+    player = document.querySelector("video, audio");
 
 
     playPauseBtn.onclick = () => {
